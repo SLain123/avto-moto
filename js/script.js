@@ -792,9 +792,9 @@ function initMap() {
         currentWidth = document.documentElement.clientWidth;
         let check = mainWidth - currentWidth;
 
-        if(check > 10 || check < -10) {
+        if(check > 25 || check < -25) {
                 mainWidth = document.documentElement.clientWidth;
                 window.location.reload();
         }
-    }, 5000);
+    }, 1000);
 }()); // Скрипт обновления страницы при изменении ее размеров;
