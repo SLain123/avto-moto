@@ -784,10 +784,3 @@ function initMap() {
 
     setDefaultConf();
 }()); // Скрипт меню гамбургера для планшетной и мобильной версии;
-(function refresh() {
-
-    window.addEventListener('resize',function(){
-        window.location.reload();
-    });
-    
-}()); // Скрипт обновления страницы при изменении ее размеров;
