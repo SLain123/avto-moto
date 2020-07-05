@@ -784,3 +784,17 @@ function initMap() {
 
     setDefaultConf();
 }()); // Скрипт меню гамбургера для планшетной и мобильной версии;
+(function refresh() {
+    let currentWidth = document.documentElement.clientWidth;
+    let mainWidth = document.documentElement.clientWidth;
+
+    setInterval(function() {
+        currentWidth = document.documentElement.clientWidth;
+        let check = mainWidth - currentWidth;
+
+        if(check > 10 || check < -10) {
+                mainWidth = document.documentElement.clientWidth;
+                window.location.reload();
+        }
+    }, 5000);
+}()); // Скрипт обновления страницы при изменении ее размеров;
